@@ -45,9 +45,10 @@ $this->setFrameMode(true);
 			<span><?echo $arItem["DISPLAY_ACTIVE_FROM"]?></span>
 		<?endif?>
 	
-		<div class="article-item__wrapper">
+		
 		<?if($arParams["DISPLAY_NAME"]!="N" && $arItem["NAME"]):?>
 			<?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
+			<div class="article-item__wrapper">
 				<div class="article-item__title">
 					<?echo $arItem["NAME"]?>
 				</div>
